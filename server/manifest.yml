@@ -1,0 +1,11 @@
+---
+applications:
+- name: axispoint-ui
+  domain: mybluemix.net
+  host: axispoint-ui
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  memory: 512M
+  instances: 1
+  disk_quota: 1G
+  env:
+    NODE_ENV: bluemix
