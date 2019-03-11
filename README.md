@@ -33,6 +33,34 @@ Open [http://localhost:PORT](http://localhost:PORT) to view it in the browser.
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run lint`
+
+Will run ESLint and Prettier. The `.eslintrc.yml` and `.prettierrc` files contain the style rules.
+
+### `npm run lint:fix`
+
+Will fix any linting warnings/errors it can automatically.
+
+## Serve the app locally
+
+#### `npm run build`
+
+Will compile the React app and output build artifacts to the `build/` directory.
+
+#### `node server/`
+
+Will start the server and serve the React app from the `build/` directory.
+
+## Run the app as a Docker container
+
+#### `docker build -t <IMAGE_NAME> ./`
+
+Will build the Docker image specified in the `Dockerfile`. Uses [Phusion Base Image](https://github.com/phusion/baseimage-docker) as the base image.
+
+#### `docker run -p 5000:5000 <IMAGE_NAME>`
+
+Will run your docker image, mapping local port 5000 to the exposed container port 5000.
+
 ## Other Commands
 
 ### `npm run eject`
